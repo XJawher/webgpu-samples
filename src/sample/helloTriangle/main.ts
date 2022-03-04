@@ -65,7 +65,7 @@ const init: SampleInit = async ({ canvasRef }) => {
 
     const passEncoder = commandEncoder.beginRenderPass(renderPassDescriptor);
     passEncoder.setPipeline(pipeline);
-    passEncoder.draw(3, 1, 0, 0);
+    passEncoder.draw(9, 1, 0, 0);
     passEncoder.endPass();
 
     device.queue.submit([commandEncoder.finish()]);
